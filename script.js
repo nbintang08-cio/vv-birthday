@@ -173,6 +173,8 @@ const LAGU = [    // taruh file lagu di folder music/
   { t: 'Titik Nadir', a: 'Kahitna', src:'music/Titik-Nadir.mp3'},
   { t: 'Satu Bulan', a: 'Bernadya', src:'music/Satu-Bulan.mp3'}
 ];
+MEMORI.forEach(m => m.src = m.src.replace('foto/', ''));
+LAGU.forEach(l => l.src = l.src.replace('music/', ''));
 /* ============================================ */
 
 const rm = matchMedia('(prefers-reduced-motion: reduce)').matches;
